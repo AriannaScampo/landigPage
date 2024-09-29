@@ -1,0 +1,161 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para el encabezado */
+header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-navBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el menú de navegación */
+}
+
+.navBar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    padding: 0;
+}
+
+.navBar-list li {
+    margin: 0 15px;
+}
+
+.navBar-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#logo {
+    height: 50px;
+}
+
+/* Estilos para el banner */
+.container-baner {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px); /* Ajusta la altura del banner para que no cubra el menú */
+}
+
+#video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+
+.btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    background-color: #020659;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0033cc;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+.iniciox {
+    text-align: center;
+    padding: 50px 30px;
+    background: rgba(28, 29, 32, 0.5); /* Fondo semi-transparente */
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.iniciox h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.iniciox p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las secciones */
+.seccion {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.seccion h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.seccion p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.seccion ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.seccion li {
+    font-size: 1rem;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
